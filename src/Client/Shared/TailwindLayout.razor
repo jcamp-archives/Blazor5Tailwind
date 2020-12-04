@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+
+<div class="flex flex-row h-screen">
+    <div class="flex flex-col w-64 h-screen text-white bg-gradient-to-b-70 from-blazor-blue to-blazor-indigo">
+        <div class="flex flex-row justify-between items-center text-white h-14 pl-4 bg-black bg-opacity-40">
+            <a href="" class="text-white text-lg">Blazor5Tailwind</a>
+            <button class="md:hidden">
+                <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd"
+                        d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                </svg>
+            </button>
+        </div>
+        <div class="h-screen">
+            <ul class="flex flex-col space-y-2 p-4">
+                <li class="">
+                    <NavLink
+                        class="text-white text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-25 hover:bg-opacity-10 py-2 px-4"
+                        href="" Match="NavLinkMatch.All">
+                        <span class="oi w-8 top-0 leading-5" data-glyph="home" aria-hidden="true"></span> Home
+                    </NavLink>
+                </li>
+                <li class="">
+                    <NavLink
+                        class="text-white text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-0 hover:bg-opacity-10 py-2 px-4"
+                        href="count">
+                        <span class="oi w-8" data-glyph="plus" aria-hidden="true"></span> Counter
+                    </NavLink>
+                </li>
+                <li class="">
+                    <NavLink
+                        class="text-white text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-0 hover:bg-opacity-10 py-2 px-4"
+                        href="fetchdata">
+                        <span class="oi w-8" data-glyph="list-rich" aria-hidden="true"></span> Fetch data
+                    </NavLink>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

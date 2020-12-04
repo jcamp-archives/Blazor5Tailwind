@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "buildcss": "postcss ../Client/Styles/*.css -d ../Client/wwwroot/css --config ./postcss.config.js",
+    "buildrazorcss": "postcss ../Client/**/*.razor.pcss --dir ../Client/ --base ../Client/ --ext .css --config ./postcss.config.js",
     "build-prod": "postcss --env production ../Client/Styles/*.css -d ../Client/wwwroot/css --ext .min.css --config ./postcss.config.js"
   },
   "author": "",

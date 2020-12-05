@@ -1,28 +1,38 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Blazor5Tailwind</a>
-    <button class="navbar-toggler" @onclick="ToggleNavMenu">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-</div>
-
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <ul class="nav flex-column">
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </li>
-    </ul>
+﻿<div class="flex flex-col w-72 h-screen text-white bg-gradient-to-b-70 from-blazor-blue to-blazor-indigo">
+    <div class="flex flex-row justify-between items-center text-white h-14 pl-4 bg-black bg-opacity-40">
+        <a href="" class="text-white text-lg">Blazor5Tailwind</a>
+        <button class="md:hidden">
+            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                <path fill-rule="evenodd"
+                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+            </svg>
+        </button>
+    </div>
+    <div class="flex-grow">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li class="">
+                <NavLink
+                    class="text-gray-300 text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-0 hover:bg-opacity-10 py-2 px-4"
+                    href="" Match="NavLinkMatch.All">
+                    <span class="oi w-8 text-lg top-0 leading-5" data-glyph="home" aria-hidden="true"></span> Home
+                </NavLink>
+            </li>
+            <li class="">
+                <NavLink
+                    class="text-gray-300 text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-0 hover:bg-opacity-10 py-2 px-4"
+                    href="counter">
+                    <span class="oi w-8 text-lg" data-glyph="plus" aria-hidden="true"></span> Counter
+                </NavLink>
+            </li>
+            <li class="">
+                <NavLink
+                    class="text-gray-300 text-sm flex flex-row items-center h-12 rounded bg-white bg-opacity-0 hover:bg-opacity-10 py-2 px-4"
+                    href="fetchdata">
+                    <span class="oi w-8 text-lg" data-glyph="list-rich" aria-hidden="true"></span> Fetch data
+                </NavLink>
+            </li>
+        </ul>
+    </div>
 </div>
 
 @code {

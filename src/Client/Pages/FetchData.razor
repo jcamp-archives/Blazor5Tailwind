@@ -2,7 +2,7 @@
 @using Blazor5Tailwind.Shared
 @inject HttpClient Http
 
-<h1 class="text-4xl font-medium mb-2">Weather forecast</h1>
+<h1 class="mb-2 text-4xl font-medium">Weather forecast</h1>
 
 <p class="mb-4">This component demonstrates fetching data from the server.</p>
 
@@ -14,7 +14,7 @@ else
 {
     <table class="w-full">
         <thead>
-            <tr class="border-t border-b-2 text-left">
+            <tr class="text-left border-t border-b-2">
                 <th class="w-1/4 p-3 ">Date</th>
                 <th class="w-1/4 p-3 ">Temp. (C)</th>
                 <th class="w-1/4 p-3 ">Temp. (F)</th>

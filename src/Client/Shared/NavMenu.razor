@@ -1,15 +1,15 @@
-﻿<div class="flex flex-shrink-0 flex-col md:w-72 md:h-screen text-white bg-gradient-to-b-70 from-blazor-blue to-blazor-indigo">
-    <div class="flex flex-row justify-between items-center text-white h-14 px-4 bg-black bg-opacity-40">
-        <a href="" class="text-white text-lg">Blazor5Tailwind</a>
-        <button class="md:hidden text-white text-opacity-50 bg-white bg-opacity-10 py-1 px-2 border border-opacity-10 border-white rounded" @onclick="ToggleNavMenu">
-            <svg class="h-7 w-7 fill-current" viewBox="0 0 24 24">
+﻿<div class="flex flex-col flex-shrink-0 text-white md:w-72 md:h-screen bg-gradient-to-b-70 from-blazor-blue to-blazor-indigo">
+    <div class="flex flex-row items-center justify-between px-4 text-white bg-black h-14 bg-opacity-40">
+        <a href="" class="text-lg text-white">Blazor5Tailwind</a>
+        <button class="px-2 py-1 text-white bg-white border border-white rounded text-opacity-50 md:hidden bg-opacity-10 border-opacity-10" @onclick="ToggleNavMenu">
+            <svg class="fill-current h-7 w-7" viewBox="0 0 24 24">
                 <path fill-rule="evenodd"
                     d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
             </svg>
         </button>
     </div>
     <div class="flex-grow @NavMenuCssClass md:block" @onclick="ToggleNavMenu">
-        <ul class="flex flex-col space-y-2 p-4">
+        <ul class="flex flex-col p-4 space-y-2">
             <li class="">
                 <NavLinkTw href="" Match="NavLinkMatch.All">
                     <svg class="w-6 mr-3" viewBox="0 0 20 20" fill="currentColor">

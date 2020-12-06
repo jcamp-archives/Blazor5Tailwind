@@ -1,4 +1,4 @@
-a.active {
+li ::deep a.active {
   --tw-bg-opacity: 0.25;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));

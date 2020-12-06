@@ -10,6 +10,7 @@ gulp.task('css', () => {
         .pipe(gulp.dest('../Client/wwwroot/css/'));
 });
 
+// this purges and minifies the css files for production, but not pcss files
 gulp.task('mincss', () => {
     process.env.NODE_ENV = 'production';
     return gulp

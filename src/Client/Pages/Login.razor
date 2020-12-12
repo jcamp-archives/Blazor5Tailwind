@@ -1,0 +1,51 @@
+﻿@page "/login"
+@using System.ComponentModel.DataAnnotations
+
+<TwHeader1>Login (non-working)</TwHeader1>
+
+@if (!string.IsNullOrEmpty(Error))
+{
+<TwAlert>
+    @Error
+</TwAlert>
+}
+
+<TwCard Title="Please enter your details">
+    <EditForm Model="loginModel" OnValidSubmit="TestSubmit">
+        <DataAnnotationsValidator />
+        <TwEditContextClasses />
+
+        <TwInputText @bind-Value="@loginModel.Email"
+                     ValidationFor="@(() => loginModel.Email)"
+                     Label="Email Address"
+                     type="email"
+                     placeholder="you@example.com" />
+
+        <TwInputText @bind-Value="@loginModel.Password"
+                     ValidationFor="@(() => loginModel.Password)"
+                     Label="Password"
+                     type="password" />
+
+        <TwButton>Submit</TwButton>
+    </EditForm>
+</TwCard>
+@code {
+
+    private LoginModel loginModel { get; set; } = new();
+    private string Error = "Test Message";
+
+    private void TestSubmit()
+    {
+        Error = "This is a non-working form.";
+    }
+
+    public class LoginModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+        [Required]
+        public string Password { get; set; }
+    }
+
+}

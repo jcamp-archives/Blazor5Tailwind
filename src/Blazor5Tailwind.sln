@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor5Tailwind.Client", "C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blazor5Tailwind.Shared", "Shared\Blazor5Tailwind.Shared.csproj", "{524B2BC0-5273-4ED6-A499-B7E2226205C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tailwind.Integration", "Tailwind.Integration\Tailwind.Integration.csproj", "{8C421EE3-F358-472F-BF20-20905DACFB32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tailwind.Integration", "Tailwind.Integration\Tailwind.Integration.csproj", "{8C421EE3-F358-472F-BF20-20905DACFB32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
